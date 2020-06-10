@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>   
+<body>
+    <h1 id="title">Survey Form</h1>
+        <p id=discription><em>Thank you for participating in this brief survey regarding my "Tribute Page" project. It helps me to improve the website to better.</em></p>
+    <form id="survey-form">
+        <fieldset>
+            <legend>Personal</legend>
+                <div class="label">
+                    <label id="name-label" for="name">Name: </label>
+                </div>
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="label">
+                    <label id="email-label" for="email">Email: </label>
+                </div>
+                <div>
+                    <input type="text" name="email" id="email"  required placeholder="Enter your email">
+                </div>
+                <div class="label">
+                    <label id="number-label" for="age">Age: </label>
+                </div>
+                <div>
+                    <input type="number" name="number" id="number" min="18" max="100" placeholder="18">
+                </div>
+                <div class="label">
+                    <label id="location-label" for="location">Location: </label>
+                </div>
+                <div>
+                <select id="dropdown" name="location">
+                    <option value="Russia">Russia</option>
+                    <option value="Usa">USA</option>
+                    <option value="China">China</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Questions</legend>
+                <div class="label">
+                    <label id="who" for="who are you">Who are you?</label>
+                </div>
+                <div>
+                    <select id="dropdown2" name="Activity">
+                        <option value="Pupil">Pupil</option>
+                        <option value="Student">Student</option>
+                        <option value="Working">Working</option>
+                    </select> 
+                </div>
+                <div class="group">
+                    <p class="question">Do you like my project?</p>
+                    <label for="radio-button1" class="radio">
+                        <input type="radio" name="opinion" id="radio-button1" class="radio-button" value="Yes" checked><span class="radioword">Yes</span>
+                    </label>
+                    <label for="radio-button2" class="radio">
+                        <input type="radio" name="opinion" id="radio-button2"  class="radio-button" value="No"><span class="radioword">No</span>
+                    </label>
+                    <label for="radio-button3" class="radio">
+                        <input type="radio" name="opinion" id="radio-button3" class="radio-button" value="Not sure"><span class="radioword">Not sure</span>
+                    </label>
+                </div>
+                <div class="group2">
+                    <p class="question">What would you like to see on my site? (Please, select at least one option):</p>
+                    <label for="checkbox1" class="checkbox">
+                        <input type="checkbox" name="opinion2" id="checkbox1" value="about-career"><span class="checkword">More about Steve Jobs's career</span>
+                    </label>
+                    <label for="checkbox2" class="checkbox">
+                        <input type="checkbox" name="opinion2" id="checkbox2" value="about-famiy"><span class="checkword">More about Steve Jobs's family</span>
+                    </label>
+                    <label for="checkbox3" class="checkbox">
+                        <input type="checkbox" name="opinion2" id="checkbox3" value="more-content"><span class="checkword">More text on the website</span>
+                    </label>
+                    <label for="checkbox4" class="checkbox">
+                        <input type="checkbox" name="opinion2" id="checkbox4" value="more-images"><span class="checkword">More photos</span>
+                    </label>
+                    <label for="checkbox5" class="checkbox">
+                        <input type="checkbox" name="opinion2" id="checkbox5" value="about-apple"><span class="checkword">More about Apple</span>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Comments</legend>
+                <div class="group">
+                    <label for="comments"><p class="comment">Please, write me a comment:</p></label>
+                    <textarea id="comments" style="height:50px;resize:vertical;" name="comment"placeholder="Enter your comment here..."></textarea>
+                </div>
+            </fieldset>
+                <div class="group3">
+                    <input type="submit" id="submit" class="submit-button"></input>
+                </div>
+    </form>    
+</body>
+</html>
